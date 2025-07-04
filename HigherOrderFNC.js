@@ -1,13 +1,20 @@
 //Higherr Order Function
 
 function abcd(val) {    //Created a fnc and this is a Higherr Order Function
+    let a = 10;
+    val(a);
 }
-abcd(function xyz() { }); //gave parameter a function
+abcd(function(value) {       //gave parameter a function
+    console.log(value);
+}); 
+    
 
 //or
 
-function def(value) {            //a function returns a function
-    return function pqr() {
+function def(val) {            //a function returns a function
+    return function pqr(extra) {
+        console.log(extra);
     };
 }
-def();
+const InnerFunction = def(10);
+InnerFunction(50);
