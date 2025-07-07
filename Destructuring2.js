@@ -21,5 +21,5 @@ let a = sum(...arr);
 console.log(a)
 
 
-//we can use spread operatorn to print whole object
+//we can use spread operator to print whole object
 console.log({ ...phone })
