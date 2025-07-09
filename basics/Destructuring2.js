@@ -20,6 +20,6 @@ function sum(v1, v2, v3) {
 let a = sum(...arr);
 console.log(a)
 
-
+    
 //we can use spread operator to print whole object
 console.log({ ...phone })
