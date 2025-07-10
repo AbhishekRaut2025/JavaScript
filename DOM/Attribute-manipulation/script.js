@@ -11,3 +11,7 @@ imgg.setAttribute("src","https://images.unsplash.com/photo-1751640295309-d807c9b
 //manipulating the a tag attribute using getAttribute
 let aTag = document.querySelector("a");
 console.log(aTag.getAttribute("href"))               //getAttribute gets attribute of releted tag and console.log it
+
+
+// removeAttribute  removes the attibute
+aTag.removeAttribute("href");
