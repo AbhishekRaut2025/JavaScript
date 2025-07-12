@@ -13,5 +13,5 @@ let firstH2 = document.querySelector("h2");
 firstH2.style.color = "orange"
 firstH2.classList.remove("xyz");                // removed class of the element
 
-firstH2.classList.toggle("pqr");                //if element has a class then it removes it or if element dont have any class then add the class
+firstH2.classList.toggle("pqr");                //if element has a class then it removes it or if element dont have any class then add the
 console.dir(firstH2);
