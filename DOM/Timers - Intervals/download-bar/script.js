@@ -1,6 +1,7 @@
 let progressText = document.querySelector("span");
 let button = document.querySelector("#startBtn");
 let progressBar = document.querySelector(".progress");
+let h2 = document.querySelector("h2");
 
 button.addEventListener("click", function () {
     let count = 0;
@@ -13,6 +14,7 @@ button.addEventListener("click", function () {
 
             count++;
         } else {
+            h2.textContent = "Download Finished"
             clearInterval(interval);
         }
     }, 300)
