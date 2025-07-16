@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        input, select, textarea {
+        width: 250px;        /* makes input bigger horizontally */
+        padding: 10px;       /* adds inner spacing */
+        margin-bottom: 10px; /* adds space between inputs */
+        font-size: 16px;     /* makes text inside inputs bigger */
+        }
+
+        textarea {
+        height: 80px;        /* makes textarea taller */
+        resize: vertical;    /* user can resize vertically only */
+        }
+
+        form {
+        max-width: 300px;
+        margin: 50px auto;   /* centers the form */
+        display: flex;
+        flex-direction: column;
+        }
+        #smallName{
+            display: none;
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id="name" type="text" placeholder="Name">
+        <small id="smallName">Name must be grater than 2 characters</small>
+        <br>
+        <input type="email" placeholder="Email">
+        <br>
+        <input type="password" placeholder="Password">
+        <br>
+        <select>
+            <option value="default" selected disabled>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+        <br>
+        <textarea placeholder="Tell us about you...!"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
