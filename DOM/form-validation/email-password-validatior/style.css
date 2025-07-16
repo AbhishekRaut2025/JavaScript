@@ -10,11 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  background: #f0f2f5;
+  background: #323232;
+  font-family: 'Poppins', sans-serif;
 }
 
 form {
-  background: white;
+  color: white;
+  background: rgb(30, 30, 30);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
