@@ -39,7 +39,7 @@ h2 {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   overflow: hidden;
-  position: relative;
+  position: relative; /* Needed for absolute positioning inside */
   margin-bottom: 25px;
 }
 
@@ -49,12 +49,18 @@ h2 {
   background: linear-gradient(135deg, #6ee7b7, #3b82f6);
   border-radius: 15px;
   transition: width 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+}
+
+/* ✅ This keeps % text fixed at center */
+#progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   font-size: 14px;
   font-weight: bold;
+  pointer-events: none; /* so it doesn't interfere with click */
 }
 
 button {
