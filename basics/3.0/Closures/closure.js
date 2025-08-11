@@ -1,5 +1,5 @@
 // Closures
-
+// a closure is a function that has access to its own scope, the parent scope and the global
 function outer() {
   let count = 0;
 
